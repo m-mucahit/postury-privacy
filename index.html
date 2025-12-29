@@ -16,58 +16,143 @@
         h1 { color: #2c3e50; }
         h2 { color: #34495e; margin-top: 30px; }
         .last-updated { color: #666; font-size: 14px; }
+        .lang-switch { 
+            text-align: right; 
+            margin-bottom: 20px;
+        }
+        .lang-switch a {
+            padding: 8px 16px;
+            margin-left: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            background: #f0f0f0;
+            color: #333;
+        }
+        .lang-switch a.active {
+            background: #2c3e50;
+            color: white;
+        }
+        .content { display: none; }
+        .content.active { display: block; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: December 29, 2024</p>
+    <div class="lang-switch">
+        <a href="#" onclick="showLang('en')" id="btn-en" class="active">English</a>
+        <a href="#" onclick="showLang('tr')" id="btn-tr">Türkçe</a>
+    </div>
 
-    <h2>Introduction</h2>
-    <p>Postury ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application.</p>
+    <!-- English -->
+    <div id="en" class="content active">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: December 29, 2024</p>
 
-    <h2>Information We Collect</h2>
-    <p><strong>We do not collect any personal information.</strong></p>
-    <p>Postury is designed with privacy in mind. The app:</p>
-    <ul>
-        <li>Does not require user registration or login</li>
-        <li>Does not collect personal data</li>
-        <li>Does not track your location</li>
-        <li>Does not access your contacts, photos, or other personal files</li>
-        <li>Does not use analytics or tracking services</li>
-    </ul>
+        <h2>Introduction</h2>
+        <p>Postury ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application.</p>
 
-    <h2>Data Storage</h2>
-    <p>All app settings and preferences (such as reminder intervals, notification preferences, and theme settings) are stored locally on your device only. This data:</p>
-    <ul>
-        <li>Never leaves your device</li>
-        <li>Is not transmitted to any external servers</li>
-        <li>Is not shared with third parties</li>
-        <li>Is deleted when you uninstall the app</li>
-    </ul>
+        <h2>Information We Collect</h2>
+        <p><strong>We do not collect any personal information.</strong></p>
+        <p>Postury is designed with privacy in mind. The app:</p>
+        <ul>
+            <li>Does not require user registration or login</li>
+            <li>Does not collect personal data</li>
+            <li>Does not track your location</li>
+            <li>Does not access your contacts, photos, or other personal files</li>
+            <li>Does not use analytics or tracking services</li>
+        </ul>
 
-    <h2>Permissions</h2>
-    <p>Postury requests the following permissions:</p>
-    <ul>
-        <li><strong>Notifications:</strong> To send you posture reminder notifications</li>
-        <li><strong>Vibration:</strong> To vibrate when sending notifications (optional)</li>
-        <li><strong>Run at startup:</strong> To restore your reminder schedule after device restart</li>
-    </ul>
-    <p>These permissions are used solely for the app's core functionality and not for data collection.</p>
+        <h2>Data Storage</h2>
+        <p>All app settings and preferences are stored locally on your device only. This data:</p>
+        <ul>
+            <li>Never leaves your device</li>
+            <li>Is not transmitted to any external servers</li>
+            <li>Is not shared with third parties</li>
+            <li>Is deleted when you uninstall the app</li>
+        </ul>
 
-    <h2>Third-Party Services</h2>
-    <p>Postury does not integrate any third-party services, analytics tools, or advertising networks.</p>
+        <h2>Permissions</h2>
+        <p>Postury requests the following permissions:</p>
+        <ul>
+            <li><strong>Notifications:</strong> To send you posture reminder notifications</li>
+            <li><strong>Vibration:</strong> To vibrate when sending notifications (optional)</li>
+            <li><strong>Run at startup:</strong> To restore your reminder schedule after device restart</li>
+        </ul>
 
-    <h2>Children's Privacy</h2>
-    <p>Our app does not collect personal information from anyone, including children under 13 years of age.</p>
+        <h2>Third-Party Services</h2>
+        <p>Postury does not integrate any third-party services, analytics tools, or advertising networks.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+        <h2>Children's Privacy</h2>
+        <p>Our app does not collect personal information from anyone, including children under 13 years of age.</p>
 
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p>Email: amisosapps@gmail.com</p>
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions, please contact us at:</p>
+        <p>Email: amisosapps@gmail.com</p>
+    </div>
+
+    <!-- Turkish -->
+    <div id="tr" class="content">
+        <h1>Gizlilik Politikası</h1>
+        <p class="last-updated">Son güncelleme: 29 Aralık 2024</p>
+
+        <h2>Giriş</h2>
+        <p>Postury olarak gizliliğinizi korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, mobil uygulamamızı kullanırken bilgilerinizi nasıl işlediğimizi açıklar.</p>
+
+        <h2>Topladığımız Bilgiler</h2>
+        <p><strong>Hiçbir kişisel bilgi toplamıyoruz.</strong></p>
+        <p>Postury gizlilik odaklı tasarlanmıştır. Uygulama:</p>
+        <ul>
+            <li>Kullanıcı kaydı veya giriş gerektirmez</li>
+            <li>Kişisel veri toplamaz</li>
+            <li>Konumunuzu takip etmez</li>
+            <li>Kişilerinize, fotoğraflarınıza veya diğer kişisel dosyalarınıza erişmez</li>
+            <li>Analitik veya izleme hizmetleri kullanmaz</li>
+        </ul>
+
+        <h2>Veri Depolama</h2>
+        <p>Tüm uygulama ayarları ve tercihleri yalnızca cihazınızda yerel olarak saklanır. Bu veriler:</p>
+        <ul>
+            <li>Cihazınızdan asla ayrılmaz</li>
+            <li>Harici sunuculara iletilmez</li>
+            <li>Üçüncü taraflarla paylaşılmaz</li>
+            <li>Uygulamayı kaldırdığınızda silinir</li>
+        </ul>
+
+        <h2>İzinler</h2>
+        <p>Postury aşağıdaki izinleri ister:</p>
+        <ul>
+            <li><strong>Bildirimler:</strong> Duruş hatırlatma bildirimleri göndermek için</li>
+            <li><strong>Titreşim:</strong> Bildirim gönderirken titreştirmek için (isteğe bağlı)</li>
+            <li><strong>Başlangıçta çalıştır:</strong> Cihaz yeniden başlatıldıktan sonra hatırlatma programını geri yüklemek için</li>
+        </ul>
+
+        <h2>Üçüncü Taraf Hizmetleri</h2>
+        <p>Postury herhangi bir üçüncü taraf hizmeti, analitik aracı veya reklam ağı entegre etmez.</p>
+
+        <h2>Çocukların Gizliliği</h2>
+        <p>Uygulamamız 13 yaşın altındaki çocuklar dahil hiç kimseden kişisel bilgi toplamaz.</p>
+
+        <h2>Bu Politikadaki Değişiklikler</h2>
+        <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikleri bu sayfada yeni Gizlilik Politikasını yayınlayarak bildireceğiz.</p>
+
+        <h2>Bize Ulaşın</h2>
+        <p>Sorularınız varsa lütfen bizimle iletişime geçin:</p>
+        <p>E-posta: amisosapps@gmail.com</p>
+    </div>
 
     <hr style="margin-top: 40px;">
     <p style="font-size: 14px; color: #666;">Postury - Posture Reminder App<br>Developed by Amisos Apps</p>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-switch a').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            return false;
+        }
+    </script>
 </body>
 </html>
